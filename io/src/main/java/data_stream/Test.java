@@ -6,7 +6,7 @@ public class Test {
     public static void main(String[] args) {
         Person tom = new Person("Tom", 35, 1.75, true);
 
-        try (DataOutputStream dos = new DataOutputStream(new FileOutputStream("/home/evgeniy/IdeaProjects/test/src/io/file/data_stream/file"))) {
+        try (DataOutputStream dos = new DataOutputStream(new FileOutputStream("/home/evgeniy/IdeaProjects/file_data/src/io/file/data_stream/file"))) {
             dos.writeUTF(tom.name);
             dos.writeInt(tom.age);
             dos.writeDouble(tom.height);
@@ -16,7 +16,7 @@ public class Test {
             System.out.println(ex.getMessage());
         }
 
-        try (DataInputStream dos = new DataInputStream(new FileInputStream("/home/evgeniy/IdeaProjects/test/src/io/file/data_stream/file"))) {
+        try (DataInputStream dos = new DataInputStream(new FileInputStream("/home/evgeniy/IdeaProjects/file_data/src/io/file/data_stream/file"))) {
             String name = dos.readUTF();
             int age = dos.readInt();
             double height = dos.readDouble();

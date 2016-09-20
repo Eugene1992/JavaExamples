@@ -8,7 +8,7 @@ import java.io.*;
 
 public class Test {
     public static void main(String[] args) {
-        byte[] bytes = readWAVAudioFileData("/home/evgeniy/IdeaProjects/test/src/io/file/audio_stream/The_Pixies_-_Where_is_my_mind_.wav");
+        byte[] bytes = readWAVAudioFileData("C:\\Users\\Eugene\\IdeaProjects\\JavaExamples\\io\\src\\main\\java\\audio_stream\\The_Pixies_-_Where_is_my_mind_.wav");
         writeWAV(bytes);
     }
 
@@ -30,7 +30,7 @@ public class Test {
     public static void writeWAV(byte[] bytes) {
         try {
             OutputStream outputStream = new FileOutputStream("new.wav");
-            for (int i = 0; i < 4000000; i++) {
+            for (int i = 0; i < 400000; i++) {
                 outputStream.write(bytes[i]);
             }
             outputStream.close();
