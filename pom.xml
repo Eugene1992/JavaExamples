@@ -11,6 +11,8 @@
     <modules>
         <module>hibernate-native</module>
         <module>io</module>
+        <module>test</module>
+        <module>collections</module>
     </modules>
 
     <properties>
