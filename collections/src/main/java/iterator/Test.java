@@ -11,7 +11,7 @@ public class Test {
         zoo.add(new Cat("Murzik1"));
         zoo.add(new Cat("Murzik2"));
         zoo.add(new Cat("Murzik3"));
-//        zoo.add(new Dog());
+//        zoo.push(new Dog());
 
         for (Cat animal : zoo) {
             animal.speak();
