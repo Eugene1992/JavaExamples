@@ -15,5 +15,6 @@ public class Test {
 
         Employee[] employeesarr = employees.toArray(new Employee[employees.size()]);
         Human h1 = new Human("Ivan", 23);
+        System.out.println("Solution");
     }
 }
